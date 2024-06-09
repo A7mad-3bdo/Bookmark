@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/bookmark.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="main-header">
+            <h1 class="mx-auto text-center py-5">Bookmarker</h1>
+        </div>
+    </header>
+    <main>
+        <section class="container inputs">
+            <div class="section-header d-flex align-items-baseline justify-content-center">
+                <h2><i class="fa-solid fa-bookmark mx-1"></i>Bookmark your favorite sites<i class="fa-solid fa-bookmark mx-1"></i></h2>
+            </div>
+            <form class="section-inputs">
+                <div class="site-name-input my-2">
+                    <label for="bookmark-name-input" class="fw-bold my-2"><i class="fa-solid fa-book-bookmark mx-2"></i>Site Name</label>
+                    <input onkeyup="validateInputs(this)" type="text" placeholder="Bookmark Name" class="form-control" id="bookmarkNameInput">
+                    <div class="alert d-none alert-danger py-1 mt-2">
+                        <small>You should atleast write 3 letters</small>
+                    </div>
+                </div>
+                <div class="site-url-input my-2">
+                    <label for="site-url-input" class="fw-bold my-2"><i class="fa-solid fa-link mx-2"></i>Site URL</label>
+                    <input onkeyup="validateInputs(this)" type="text" placeholder="Website URL" class="form-control" id="siteUrlInput">
+                    <div class="alert d-none alert-danger py-1 mt-2">
+                        <small>Please write https:// or http:// then www. then the rest of webiste name/small>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn pt-2 px-5 mt-4" id="formButton"> Submit</button>
+                </div>
+            </form>
+        </section>
+        <section class="container mt-4 results" id="table-results">
+            <table class="table table-hover text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th>Visit</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="showData">
+                    
+                </tbody>
+            </table>
+        </section>
+        <section class="explanation d-none text-center" id="explanation">
+            
+            <div class="explanation-close">
+                <i class="fa-solid fa-circle-xmark"></i>
+            </div>
+            <div class="explanation-message pt-5">
+                <p>
+                    1- Please follow the instructions under every input.
+                </p>
+                <p>
+                    2- Please makesure, that all fields are inserted.
+                </p>
+            </div>
+           
+        
+        </section>
+    </main>
+
+
+        
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

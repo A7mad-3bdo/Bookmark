@@ -1,0 +1,125 @@
+/* Start main styles */
+:root {
+    --main-color: #352e28;
+    --main-transition-time: 0.3s;    
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    background-color: #F7ECDE;
+}
+/* End main styles */
+
+
+/* Start header styles */
+
+
+header .main-header h1 {
+    font: 500 50px Pacifico, cursive;
+    color: var(--main-color);
+    position: relative;
+    width: 16rem;
+    
+}
+header .main-header h1::before {
+    content: "";
+    background-color: #FEC260;
+    width: 100%;
+    height: 10%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 65px;
+    z-index: -1;
+    transition: all var(--main-transition-time);
+}
+header .main-header:hover h1::before {
+    height: 20%;
+}
+/* End header styles */
+
+
+/* Start mainSection styles */
+
+main section .section-header {
+    font-size: 25px;
+    color: transparent;
+}
+main section .section-header h2 {
+    font: 500 25px Righteous, cursive;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+}
+
+section form #formButton {
+    background-color: #D1512D;
+    color: white;
+}
+section form #formButton:hover {
+    background-color: #BB4120;
+}
+
+.inputs {
+    border: 2px dotted black;
+    border-left: 0;
+    border-right: 0;
+    padding: 2rem;
+}
+
+
+/* End mainSection styles */
+
+
+
+
+
+/* Start tabelSection styles */
+
+table tbody td #tabelbutton1 {
+    background-color: #9EB23B;
+    color: white;
+}
+
+
+table tbody td #tabelbutton1:hover {
+    background-color: #8A9E23;
+}
+
+table tbody td #tabelbutton2 {
+    background-color: #EB1D36;
+    color: white;
+}
+
+table tbody td #tabelbutton2:hover {
+    background-color: #D30820;
+}
+/* End tabelSection styles */
+
+
+/* Start Explanation styles */
+
+.explanation-message {
+    position: absolute;
+    background-color: grey;
+    color: white;
+    font-size: 3rem;
+    top: 20%;
+    bottom: 20%;
+    left: 20%;
+    right: 20%;
+    
+}
+
+.explanation-close {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    top: 21%;
+    right: 21%;
+    z-index: 2;
+    cursor: pointer;
+}
+
+/* End Explanation styles */
